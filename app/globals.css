@@ -1,13 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"); */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-color: #ddb762;
+  --green-color: #3fd06f;
+  --gray-blue: #2c4768;
+  --gradient: linear-gradient(136.97deg, #ddb762 3.34%, #000000 225.23%);
+  --main-shadow: 0px 2px 4px -2px #1018280f, 0px 4px 8px -2px #1018281a;
+  --main-bg: #f9f9f9;
 }
-
+.filter-white {
+  filter: invert(99%) sepia(4%) saturate(346%) hue-rotate(169deg)
+    brightness(116%) contrast(100%);
+  -webkit-filter: invert(99%) sepia(4%) saturate(346%) hue-rotate(169deg)
+    brightness(116%) contrast(100%);
+}
+.filter-golden {
+  filter: invert(71%) sepia(49%) saturate(410%) hue-rotate(3deg) brightness(97%)
+    contrast(86%);
+  -webkit-filter: invert(71%) sepia(49%) saturate(410%) hue-rotate(3deg)
+    brightness(97%) contrast(86%);
+}
+.filter-img-bg {
+  filter: invert(71%) sepia(49%) saturate(410%) hue-rotate(3deg) brightness(97%)
+    contrast(86%);
+  -webkit-filter: invert(71%) sepia(49%) saturate(410%) hue-rotate(3deg)
+    brightness(97%) contrast(86%);
+}
+.icon-container:hover .filter-img-bg {
+  filter: invert(99%) sepia(4%) saturate(346%) hue-rotate(169deg)
+    brightness(116%) contrast(100%);
+  -webkit-filter: invert(99%) sepia(4%) saturate(346%) hue-rotate(169deg)
+    brightness(116%) contrast(100%);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,15 +44,66 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.card-shadow {
+  box-shadow: var(--main-shadow);
+}
 
+.lawyer-card,
+.card-icon,
+.gray-color,
+.icon-container {
+  transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.lawyer-card:hover {
+  background-image: var(--gradient);
+  color: white;
+}
+.gray-color {
+  color: #a3a4a5;
+}
+.lawyer-card:hover .gray-color {
+  color: #fff;
+}
+
+.icon-container {
+  color: white;
+}
+.icon-container:hover {
+  background-image: var(--gradient);
+  color: white;
+}
+.icon-color {
+  color: #ddb762;
+}
+.bluish-gray {
+  color: var(--gray-blue);
+}
+.main-bg {
+  background: var(--main-bg);
+}
+.bg-yellow {
+  background: var(--main-color);
+}
+.active-tab {
+  color: var(--gray-blue);
+  border-bottom: solid var(--gray-blue) 2px;
+}
+.green-color {
+  color: var(--green-color);
+}
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: var(--main-bg);
 }
 
 @layer utilities {

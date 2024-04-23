@@ -1,0 +1,49 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+1 of 5,397
+FrontEnd Job - Arkan Al Taif
+Inbox
+
+careers@arkanltyf.com
+Attachments
+12:29 (51 minutes ago)
+to
+
+Hello everyone,
+
+We would like to thank you all for your interest in applying for the
+Frontend Developer role utilizing React and Next.js with API
+integration.
+
+Attached is the task document for your review and completion: Frontend
+Task
+https://tough-trout-e06.notion.site/Ymtaz-Frontend-Task-9da6f520971e455e8382c1b6ace32731
+
+API Collection is attached in case email does not work for you.
+
+Please ensure to carefully read through the task requirements and
+guidelines.
+
+Upon completion, please upload your project to GitHub and deploy it.
+Once deployed, kindly send the deployment link to
+
+>> https://forms.gle/qq51Q4R89wZ6PkD17
+
+The deadline for submission is 12:00 AM Egypt time on April 24-4-2024.
+
+Do not respond to this email. If you have a problem or any inquiry, send
+a message on this form and you will be answered as soon as possible:
+https://forms.gle/A9CT2EC2rE2iN69W6
+
+Best regards,
+Tech Team
+Yossef Ashraf
+ 2 attachments
+  • Scanned by Gmail
+
+  // Ymtaz.postman_collection.json
+// Displaying Production.postman_environment.json.

@@ -1,0 +1,244 @@
+{
+  "info": {
+    "_postman_id": "d2d4daf6-ef77-4ef7-a64a-93b52216a032",
+    "name": "Ymtaz",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34287099"
+  },
+  "item": [
+    {
+      "name": "Client Section",
+      "item": [
+        {
+          "name": "Lawyer",
+          "item": [
+            {
+              "name": "Profile",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ltdGF6LnNhL2FwaS9jbGllbnQvbG9naW4iLCJpYXQiOjE3MTMxODgxOTAsImV4cCI6MjE2MDE3MTMxODgxOTAsIm5iZiI6MTcxMzE4ODE5MCwianRpIjoiOXVZU0lsOHY2UkkzNGxHciIsInN1YiI6IjE2NTEiLCJwcnYiOiIyYTg0NjYyYzMzMTU3NTQ2YzQzZjQwMzc1NDY0MTViYzcwZDc4YmJjIn0.jn7AwKiHQhN-z4qraZ0udGn_321-6V7JQJX3GyabQU4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://ymtaz.sa/api/client/lawyer/5218",
+                  "host": ["{{client_url}}lawyer"],
+                  "path": ["5218"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "DigitalGuide",
+          "item": [
+            {
+              "name": "Categories",
+              "item": [
+                {
+                  "name": "getCategories",
+                  "request": {
+                    "auth": {
+                      "type": "noauth"
+                    },
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{client_url}}digital-guide/categories",
+                      "host": ["{{client_url}}digital-guide"],
+                      "path": ["categories"]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Filter",
+              "item": [
+                {
+                  "name": "Requirements",
+                  "item": [
+                    {
+                      "name": "countries",
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{client_url}}digital-guide/filter/data/countries",
+                          "host": ["{{client_url}}digital-guide"],
+                          "path": ["filter", "data", "countries"]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "cities",
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{client_url}}digital-guide/filter/data/cities",
+                          "host": ["{{client_url}}digital-guide"],
+                          "path": ["filter", "data", "cities"]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "districts",
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{client_url}}digital-guide/filter/data/districts",
+                          "host": ["{{client_url}}digital-guide"],
+                          "path": ["filter", "data", "districts"]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "search",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{client_token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "category_id",
+                          "value": "1",
+                          "type": "text"
+                        },
+                        {
+                          "key": "country_id",
+                          "value": "3",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "city_id",
+                          "value": "5",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "district_id",
+                          "value": "1",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "gender",
+                          "value": "Female",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "name",
+                          "value": "مصطفى",
+                          "type": "text",
+                          "disabled": true
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{client_url}}digital-guide/search",
+                      "host": ["{{client_url}}digital-guide"],
+                      "path": ["search"]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "inherit"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "client_token",
+      "value": " "
+    }
+  ]
+}
