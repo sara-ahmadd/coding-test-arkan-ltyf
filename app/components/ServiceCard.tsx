@@ -13,7 +13,7 @@ function ServiceCard({
   intro: string;
 }) {
   return (
-    <div className="main-bg p-5 w-[328.86px] h-[158px] mx-auto ">
+    <div className="main-bg p-5 w-[328.86px] h-fit mx-auto ">
       <div className="w-full flex justify-between  items-start">
         <div className="w-1/3 text-right">
           <p className="font-bold">سعر الخدمة</p>
