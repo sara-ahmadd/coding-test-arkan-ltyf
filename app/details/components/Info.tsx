@@ -22,7 +22,10 @@ function Info({ id }: { id: string }) {
       });
   }, [id]);
   const time = (
-    <li className="bg-yellow flex justify-center items-center text-[16px] px-1  rounded-[8px] text-white w-[65px] h-[30px] ">
+    <li
+      role="button"
+      className="hover:bg-[#ddb762] flex justify-center items-center text-[16px] px-1  rounded-[8px] hover:text-white text-[#a3a4a5] w-[65px] h-[30px] "
+    >
       10:00 <span>ص</span>
     </li>
   );
@@ -114,7 +117,7 @@ function Info({ id }: { id: string }) {
                   اليوم
                 </p>
 
-                <p className="w-full text-[16px] px-3 text-center gray-color my-auto h-fit">
+                <p className="w-full text-[16px] px-3 text-center gray-color my-auto h-ft">
                   لا يوجد مواعيد متاحة
                 </p>
               </div>
