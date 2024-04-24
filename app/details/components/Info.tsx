@@ -24,7 +24,7 @@ function Info({ id }: { id: string }) {
   const time = (
     <li
       role="button"
-      className="hover:bg-[#ddb762] flex justify-center items-center text-[16px] px-1  rounded-[8px] hover:text-white text-[#a3a4a5] w-[65px] h-[30px] "
+      className="hover:bg-[#ddb762] flex justify-center items-center text-[16px] px-1  rounded-[8px] hover:text-white text-[#a3a4a5] w-[65px] h-[30px] z-[2]"
     >
       10:00 <span>ص</span>
     </li>
@@ -82,7 +82,7 @@ function Info({ id }: { id: string }) {
           )}
           {activeTab === "اوقات العمل" && (
             <div className="w-full bg-white gap-3 flex justify-center items-center relative">
-              <div className="absolute w-full flex justify-between items-center px-2">
+              <div className="absolute z-[1] w-full flex justify-between items-center px-2">
                 <Image
                   src={"/images/left.svg"}
                   alt="left"
